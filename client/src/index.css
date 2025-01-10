@@ -1,0 +1,269 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.leaflet-container {
+  height: 90vh;
+  width: 90%;
+  border-radius: 2rem;
+}
+
+.leaflet-draw {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.leaflet-draw-toolbar-topright {
+  top: 10px;
+  right: 10px;
+}
+
+.leaflet-draw-toolbar li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+
+/* Container for the form */
+.login-form-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.login-form-heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Field container */
+.login-form-field {
+  margin-bottom: 15px;
+}
+
+/* Label */
+.login-form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Input */
+.login-form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.login-form-input.error {
+  border-color: red;
+}
+
+/* Buttons */
+.login-form-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.login-form-button:hover {
+  background-color: #0056b3;
+}
+
+.login-form-forgot-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  color: #007bff;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form-forgot-button:hover {
+  background-color: #e2e6ea;
+}
+
+/* Additional Info */
+.login-form-additional-info {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-form-additional-info .link {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Error Text */
+.login-form-error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Status Messages */
+.login-form-error-message {
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+}
+
+.login-form-loading-message {
+  text-align: center;
+  color: #007bff;
+  margin-top: 10px;
+}
+
+/* Logout Button */
+.logout-button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #cc0000;
+}
+
+/* Centered Container */
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Container for Register Form */
+.register-form-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Wrapper for Form */
+.register-form-wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Field */
+.form-field {
+  margin-bottom: 15px;
+}
+
+/* Label */
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+/* Status Messages */
+.status-message {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.status-message.loading {
+  color: #007bff;
+}
+
+.status-message.success {
+  color: #28a745;
+}
+
+.status-message.error {
+  color: #dc3545;
+}
